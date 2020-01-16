@@ -3,26 +3,29 @@ let customsMapLink = "./img/Customs.png";
 
 let model = {
 
-    weaponCategory: [
-        { categories: 'Assault Rifles' },
-        { categories: 'Heavy Assault Rifles' },
-        { categories: '' },
+    makeMenuCategories: [
+        { makeCategoryFunction: 'createMapButtons', buttonName: 'Maps' },
+        { makeCategoryFunction: 'makeWeaponList', buttonName: 'Weapons' },
+        { makeCategoryFunction: 'makeAmmoButtonList', buttonName: 'Ammo' },
+        { makeCategoryFunction: 'makeEquipmentButtonList', buttonName: 'Equipment' },
     ],
 
 
-    calibers: [
-        { size: '4.6 x 30' },
-        { size: '9 x 39' },
-        { size: '5.45 x 39' },
-        { size: '5.56 x 45' },
-        { size: '7.62 x 39' },
-        { size: '7.62 x 51' },
-        { size: '7.62 x 54R' },
+    makeAmmoButtons: [
+        { makeAmmoFunction: 'updateView', buttonName: 'Back' },
+        { makeAmmoFunction: 'make46x30chart', buttonName: '4.6 x 30' },
+        { makeAmmoFunction: 'make9x39chart', buttonName: '9 x 39' },
+        { makeAmmoFunction: 'make545x39chart', buttonName: '5.45 x 39' },
+        { makeAmmoFunction: 'make556x45chart', buttonName: '5.56 x 45' },
+        { makeAmmoFunction: 'make762x39chart', buttonName: '7.62 x 39' },
+        { makeAmmoFunction: 'make762x51chart', buttonName: '7.62 x 51' },
+        { makeAmmoFunction: 'make762x54Rchart', buttonName: '7.62 x 54R' },
     ],
 
 
 
     makeMapButtons: [
+        { makeMapFunction: 'updateView', buttonName: 'Back' },
         { makeMapFunction: 'makeFactoryMap', buttonName: 'Factory' },
         { makeMapFunction: 'makeCustomsMap', buttonName: 'Customs' },
         { makeMapFunction: 'makeInterchangeMap', buttonName: 'Interchange' },
@@ -31,6 +34,18 @@ let model = {
         { makeMapFunction: 'makeReserveMap', buttonName: 'Reserve' },
     ],
 
+    makeEquipmentButtons: [
+        { makeEquipmentFunction: 'updateView', buttonName: 'Back' },
+        { makeEquipmentFunction: 'make46x30chart', buttonName: 'Helmets' },
+        { makeEquipmentFunction: 'make762x39chart', buttonName: 'Face Cover' },
+        { makeEquipmentFunction: 'make762x51chart', buttonName: 'Headsets' },
+        { makeEquipmentFunction: 'make9x39chart', buttonName: 'Kevlar' },
+        { makeEquipmentFunction: 'make545x39chart', buttonName: 'Armored Chest Rigs' },
+        { makeEquipmentFunction: 'make556x45chart', buttonName: 'Unarmored Chest Rigs' },
+        { makeEquipmentFunction: 'make762x54Rchart', buttonName: 'Backpacks' },
+    ],
+    
+    
     array46x30: [
         { type: 'AP SX', damage: '35', penetration: '47', price: 'xxx' },
         { type: 'Subsonic SX', damage: '41', penetration: '34', price: 'xxx' },
@@ -52,7 +67,7 @@ let model = {
         { type: 'BT Rounds', damage: '44', penetration: '33', price: 'xxx' },
     ],
 
-    array545x45: [
+    array556x45: [
         { type: 'M995', damage: '42', penetration: '53', price: 'xxx' },
         { type: 'M856A1', damage: '56', penetration: '34', price: 'xxx' },
         { type: 'M855A1', damage: '57', penetration: '31', price: 'xxx' },

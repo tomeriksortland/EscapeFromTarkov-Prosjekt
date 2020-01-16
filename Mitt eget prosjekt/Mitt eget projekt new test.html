@@ -5,6 +5,7 @@
     <script src="Model.js"></script>
     <script src="makeMenuButtons.js"></script>
     <script src="makeAmmoCharts.js"></script>
+    <script src="makeMaps.js"></script>
     <link rel="stylesheet" href="Style.css">
 </head>
 
@@ -22,21 +23,23 @@
         updateView()
         function updateView() {
 
-            html = `
-                    <div>
+            html = `<div>
                     <button onclick="dropDown()" class="dropDownMenu div1">Menu</button>
+                    </div>
+                    <div class="div2">`
+                       
+                for (CategoryButton of model.makeMenuCategories) {
+                    html += `
+                    <button class="${hideOrShow} dropdownMenuContent" onclick="${CategoryButton.makeCategoryFunction}()">${CategoryButton.buttonName}</button>
                     
-                    <div class="div2">
-                        <button onclick="makeWeaponList()" class="dropdownMenuContent ${hideOrShow}">Weapons</button>
-                        <button onclick="makeAmmoButtonList()" class="dropdownMenuContent ${hideOrShow}">Ammo</button>
-                        <button onclick="createMapButtons()" class="dropdownMenuContent ${hideOrShow}">Maps</button>
+                    ` 
+                }
+                html += `</div>`
     
-                        </div>
-                    </div>`
-
-
-            showContent.innerHTML = html + ammoChart;
-        }
+                showContent.innerHTML = html;
+    
+            }
+       
 
         function dropDown() {
             if (hideOrShow == "show") {

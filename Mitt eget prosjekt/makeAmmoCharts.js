@@ -125,7 +125,7 @@ function get545x39info() {
 }
 
 
-function make545x45chart() {
+function make556x45chart() {
     ammoChart = '';
     html = '';
     html = `
@@ -143,8 +143,8 @@ function make545x45chart() {
         </tr>`
 
 
-    for (info of model.array545x45) {
-        ammoChart += get545x45info()
+    for (info of model.array556x45) {
+        ammoChart += get556x45info()
 
 
     }
@@ -154,7 +154,7 @@ function make545x45chart() {
 
 }
 
-function get545x45info() {
+function get556x45info() {
     return `
     
         <tr>
