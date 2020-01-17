@@ -3,46 +3,37 @@ let customsMapLink = "./img/Customs.png";
 
 let model = {
 
-    makeMenuCategories: [
-        { makeCategoryFunction: 'createMapButtons', buttonName: 'Maps' },
-        { makeCategoryFunction: 'makeWeaponList', buttonName: 'Weapons' },
-        { makeCategoryFunction: 'makeAmmoButtonList', buttonName: 'Ammo' },
-        { makeCategoryFunction: 'makeEquipmentButtonList', buttonName: 'Equipment' },
+    
+
+    class2HeadwearChart: [
+        { name: 'PSH-97 Djeta', durability: '65', ricochetChance: 'Low', eronomics: '-14', soundReduction: 'High', headset: 'No' },
+        { name: 'SHPM Firefighters', durability: '40', ricochetChance: 'Low', eronomics: '-10', soundReduction: 'High', headset: 'No' },
+        { name: 'Kolpak-1S riot', durability: '20', ricochetChance: 'Low', eronomics: '-5', soundReduction: 'High', headset: 'No' },
     ],
 
-
-    makeAmmoButtons: [
-        { makeAmmoFunction: 'updateView', buttonName: 'Back' },
-        { makeAmmoFunction: 'make46x30chart', buttonName: '4.6 x 30' },
-        { makeAmmoFunction: 'make9x39chart', buttonName: '9 x 39' },
-        { makeAmmoFunction: 'make545x39chart', buttonName: '5.45 x 39' },
-        { makeAmmoFunction: 'make556x45chart', buttonName: '5.56 x 45' },
-        { makeAmmoFunction: 'make762x39chart', buttonName: '7.62 x 39' },
-        { makeAmmoFunction: 'make762x51chart', buttonName: '7.62 x 51' },
-        { makeAmmoFunction: 'make762x54Rchart', buttonName: '7.62 x 54R' },
+    class3HeadwearChart: [
+        { name: 'SSSh-95 Sfera-S', durability: '100', ricochetChance: 'Medium', eronomics: '-3', soundReduction: 'High', headset: 'No' },
+        { name: 'Kiver-M Helmet', durability: '35', ricochetChance: 'Medium', eronomics: '-1', soundReduction: 'High', headset: 'No' },
+        { name: 'SSh-68', durability: '30', ricochetChance: 'High', eronomics: '-13', soundReduction: 'None', headset: 'Yes' },
+        { name: 'LZSh light', durability: '30', ricochetChance: 'Medium', eronomics: '-1', soundReduction: 'None', headset: 'Yes' },
+        { name: '6B47 Ratnik-BSh', durability: '25', ricochetChance: 'High', eronomics: '-2', soundReduction: 'Low', headset: 'Yes' },
+        { name: 'UNTAR Helmet', durability: '25', ricochetChance: 'High', eronomics: '-2', soundReduction: 'Low', headset: 'Yes' },
     ],
 
-
-
-    makeMapButtons: [
-        { makeMapFunction: 'updateView', buttonName: 'Back' },
-        { makeMapFunction: 'makeFactoryMap', buttonName: 'Factory' },
-        { makeMapFunction: 'makeCustomsMap', buttonName: 'Customs' },
-        { makeMapFunction: 'makeInterchangeMap', buttonName: 'Interchange' },
-        { makeMapFunction: 'makeWoodsMap', buttonName: 'Woods' },
-        { makeMapFunction: 'makeShorelineMap', buttonName: 'Shoreline' },
-        { makeMapFunction: 'makeReserveMap', buttonName: 'Reserve' },
+    class4HeadwearChart: [
+        { name: 'Crye Precision Airframe', durability: '40', ricochetChance: 'High', eronomics: '-3', soundReduction: 'None', headset: 'Yes' },
+        { name: 'Ops-Core Fast MT SUPER HIGH CUT', durability: '40', ricochetChance: 'High', eronomics: '0', soundReduction: 'None', headset: 'Yes' },
+        { name: 'Team Wendy EXFIL Ballistic', durability: '45', ricochetChance: 'High', eronomics: '-4', soundReduction: 'None', headset: 'Yes' },
+        { name: 'Maska 1Sch', durability: '60', ricochetChance: 'Medium', eronomics: '-7', soundReduction: 'High', headset: 'No' },
+        { name: 'BNTI LSHZ-2DTM', durability: '55', ricochetChance: 'High', eronomics: '-10', soundReduction: 'High', headset: 'No' },
+        { name: 'Highcom Striker ACHHC IIIA', durability: '30', ricochetChance: 'High', eronomics: '-2', soundReduction: 'None', headset: 'Yes' },
+        { name: 'MSA ACH TC-2002 MICH Series', durability: '27', ricochetChance: 'High', eronomics: '-2', soundReduction: 'None', headset: 'Yes' },
     ],
 
-    makeEquipmentButtons: [
-        { makeEquipmentFunction: 'updateView', buttonName: 'Back' },
-        { makeEquipmentFunction: 'make46x30chart', buttonName: 'Helmets' },
-        { makeEquipmentFunction: 'make762x39chart', buttonName: 'Face Cover' },
-        { makeEquipmentFunction: 'make762x51chart', buttonName: 'Headsets' },
-        { makeEquipmentFunction: 'make9x39chart', buttonName: 'Kevlar' },
-        { makeEquipmentFunction: 'make545x39chart', buttonName: 'Armored Chest Rigs' },
-        { makeEquipmentFunction: 'make556x45chart', buttonName: 'Unarmored Chest Rigs' },
-        { makeEquipmentFunction: 'make762x54Rchart', buttonName: 'Backpacks' },
+    
+    class5and6HeadwearChart: [
+        { name: 'Altyn helmet', durability: '45', ricochetChance: 'High', eronomics: '-6', soundReduction: 'High', headset: 'No' },
+        { name: 'Vulkan-5 (LShZ-5) heavy', durability: '55', ricochetChance: 'High', eronomics: '-20', soundReduction: 'High', headset: 'No' },
     ],
     
     

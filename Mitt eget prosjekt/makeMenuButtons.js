@@ -22,7 +22,7 @@ function makeAmmoButtonList() {
             </div>
             <div class="div2">
     `
-    for (AmmoButton of model.makeAmmoButtons) {
+    for (AmmoButton of modelMenuButtons.makeAmmoButtons) {
         html += `
                 <button class="${hideOrShow} dropdownMenuContent" onclick="${AmmoButton.makeAmmoFunction}()">${AmmoButton.buttonName}</button>
                 `
@@ -45,7 +45,7 @@ function createMapButtons() {
             </div>
             <div class="div2">
     `
-    for (mapButton of model.makeMapButtons) {
+    for (mapButton of modelMenuButtons.makeMapButtons) {
         html += `
                 <button class="${hideOrShow} dropdownMenuContent" onclick="${mapButton.makeMapFunction}()">${mapButton.buttonName}</button>
                 `
@@ -63,12 +63,81 @@ function createMapButtons() {
             </div>
             <div class="div2">
     `
-    for (AmmoButton of model.makeAmmoButtons) {
+    for (EquipmentButton of modelMenuButtons.makeEquipmentButtons) {
         html += `
-                <button class="${hideOrShow} dropdownMenuContent" onclick="${AmmoButton.makeAmmoFunction}()">${AmmoButton.buttonName}</button>
+                <button class="${hideOrShow} dropdownMenuContent" onclick="${EquipmentButton.makeEquipmentFunction}()">${EquipmentButton.buttonName}</button>
                 `
     }
     html += `</div>`
-    showContent.innerHTML = html + ammoChart;
+    showContent.innerHTML = html;
+
+}
+
+function makeHeadwearButtons() {
+    html = '';
+    html += `<div>
+        <button onclick="dropDown()" class="dropDownMenu div1">Menu</button>
+        </div>
+        <div class="div2">
+`
+for (HeadwearButton of modelMenuButtons.makeHeadwearButtons) {
+    html += `
+            <button class="${hideOrShow} dropdownMenuContent" onclick="${HeadwearButton.makeHeadwearFunction}()">${HeadwearButton.buttonName}</button>
+            `
+}
+html += `</div>`
+console.log(html)
+showContent.innerHTML = html;
+
+}
+
+function makeKevlarButtons() {
+    html = '';
+    html += `<div>
+        <button onclick="dropDown()" class="dropDownMenu div1">Menu</button>
+        </div>
+        <div class="div2">
+`
+for (ArmoredVestsButton of modelMenuButtons.makeKevlarButtons) {
+    html += `
+            <button class="${hideOrShow} dropdownMenuContent" onclick="${ArmoredVestsButton.makeArmoredVestsFunction}()">${ArmoredVestsButton.buttonName}</button>
+            `
+}
+html += `</div>`
+showContent.innerHTML = html;
+
+}
+
+function makeChestRigButtons() {
+    html = '';
+    html += `<div>
+        <button onclick="dropDown()" class="dropDownMenu div1">Menu</button>
+        </div>
+        <div class="div2">
+`
+for (chestRigButton of modelMenuButtons.makeChestRigButtons) {
+    html += `
+            <button class="${hideOrShow} dropdownMenuContent" onclick="${chestRigButton.makeChestRigFunction}()">${chestRigButton.buttonName}</button>
+            `
+}
+html += `</div>`
+showContent.innerHTML = html;
+
+}
+
+function makeBackpackButtons() {
+    html = '';
+    html += `<div>
+        <button onclick="dropDown()" class="dropDownMenu div1">Menu</button>
+        </div>
+        <div class="div2">
+`
+for (BackpackButton of modelMenuButtons.makeBackpackButtons) {
+    html += `
+            <button class="${hideOrShow} dropdownMenuContent" onclick="${BackpackButton.makeBackpackFunction}()">${BackpackButton.buttonName}</button>
+            `
+}
+html += `</div>`
+showContent.innerHTML = html;
 
 }

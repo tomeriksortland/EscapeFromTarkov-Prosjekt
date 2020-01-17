@@ -3,9 +3,11 @@
 
 <head>
     <script src="Model.js"></script>
+    <script src="ModelMenuButtons.js"></script>
     <script src="makeMenuButtons.js"></script>
-    <script src="makeAmmoCharts.js"></script>
     <script src="makeMaps.js"></script>
+    <script src="makeAmmoCharts.js"></script>
+    <script src="makeHeadgearCharts.js"></script>
     <link rel="stylesheet" href="Style.css">
 </head>
 
@@ -28,7 +30,7 @@
                     </div>
                     <div class="div2">`
                        
-                for (CategoryButton of model.makeMenuCategories) {
+                for (CategoryButton of modelMenuButtons.makeMenuCategories) {
                     html += `
                     <button class="${hideOrShow} dropdownMenuContent" onclick="${CategoryButton.makeCategoryFunction}()">${CategoryButton.buttonName}</button>
                     
@@ -51,118 +53,6 @@
             }
             updateView();
         }
-
-
-
-        // function makeMapList() {
-        //     // document.body.classList.remove("customsMap");
-        //     // document.body.classList.remove("factoryMap");
-        //     // document.body.classList.remove('interchangeMap')
-        //     // document.body.classList.remove('woodsMap')
-        //     // document.body.classList.remove('shorelineMap')
-        //     // document.body.classList.remove('reserveMap')
-
-        //     html = '';
-        //     html = `
-        //     <div>
-        //     <button onclick="dropDown()" class="dropDownMenu div1">Menu</button>
-        //     <div class="div2">
-        //         <button onclick="updateView(${mapimg.class})" class="${hideOrShow} dropdownMenuContent">Back</button>
-        //         <button onclick="makeFactoryMap()" class="${hideOrShow} dropdownMenuContent">${mapsList[0].map}</button>
-        //         <button onclick="makeCustomsMap()" class="${hideOrShow} dropdownMenuContent">${mapsList[1].map}</button>
-        //         <button onclick="makeInterchangeMap()" class="${hideOrShow} dropdownMenuContent">${mapsList[2].map}</button>
-        //         <button onclick="makeWoodsMap()" class="${hideOrShow} dropdownMenuContent">${mapsList[3].map}</button>
-        //         <button onclick="makeShorelineMap()" class="${hideOrShow} dropdownMenuContent">${mapsList[4].map}</button>
-        //         <button onclick="makeReserveMap()" class="${hideOrShow} dropdownMenuContent">${mapsList[5].map}</button>
-        //         <button class="${hideOrShow} dropdownMenuContent">${mapsList[6].map}</button>
-        //     </div>
-        //     </div>
-        //     `
-        //     showContent.innerHTML = html;
-        // }
-
-        
-
-
-
-
-
-
-
-        // function makeFactoryMap() {
-        //  makeMap(id) {
-        //                  if (id == 'factorymap'){  document.body.classList.add('${mapImgs.class}')  }
-        // }
-        //     document.body.classList.add('factoryMap');
-        //     html = '';
-        //     html = `
-        //     <div>
-        //     <button onclick="makeMapList()" class="${hideOrShow} dropdownMenuContent">Back</button>
-        //     </div>
-
-        //     `
-        //     showContent.innerHTML = html;
-        // }
-
-
-        // function makeCustomsMap() {
-        //     document.body.classList.add("customsMap");
-        //     html = '';
-        //     html = `
-        //     <div>
-        //     <button onclick="makeMapList()" class="${hideOrShow} dropdownMenuContent">Back</button>
-        //     </div>
-        //     `
-        //     showContent.innerHTML = html;
-        // }
-
-        // function makeInterchangeMap() {
-        //     document.body.classList.add("interchangeMap")
-        //     html = '';
-        //     html = `
-        //     <div>
-        //     <button onclick="makeMapList()" class="${hideOrShow} dropdownMenuContent">Back</button>
-        //     </div>
-        //     `
-        //     showContent.innerHTML = html;
-        // }
-
-        // function makeWoodsMap() {
-        //     document.body.classList.add("woodsMap")
-        //     html = '';
-        //     html = `
-        //     <div>
-        //     <button onclick="makeMapList()" class="${hideOrShow} dropdownMenuContent">Back</button>
-        //     </div>
-        //     `
-        //     showContent.innerHTML = html;
-        // }
-
-        // function makeShorelineMap() {
-        //     document.body.classList.add("shorelineMap")
-        //     html = '';
-        //     html = `
-        //     <div>
-        //     <button onclick="makeMapList()" class="${hideOrShow} dropdownMenuContent">Back</button>
-        //     </div>
-        //     `
-        //     showContent.innerHTML = html;
-        // }
-
-        // function makeReserveMap() {
-        //     document.body.classList.add("reserveMap")
-        //     html = '';
-        //     html = `
-        //     <div>
-        //     <button onclick="makeMapList()" class="${hideOrShow} dropdownMenuContent">Back</button>
-        //     </div>
-        //     `
-        //     showContent.innerHTML = html;
-        // }
-
-
-
-
 
     </script>
 </body>
