@@ -1,6 +1,6 @@
 
 
-let modelMenuButtons = {
+const modelMenuButtons = {
 
     
     makeMenuCategories: [

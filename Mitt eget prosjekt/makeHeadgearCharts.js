@@ -178,3 +178,38 @@ function getClass5and6Headwearinfo() {
         </tr>
     `;
 }
+
+function makeHeadsetChart() {
+    ammoChart = '';
+    html = '';
+    html = `
+    <div>
+    <button onclick="makeHeadwearButtons()" class="${hideOrShow} dropdownMenuContent">Back</button>
+    </div>
+    `
+    ammoChart = `
+    <table class="div3">
+        <tr>
+            <th>Name</th>
+        </tr>`
+
+
+    for (info of model.arrayHeadset) {
+        ammoChart += getHeadsetinfo()
+
+
+    }
+    ammoChart += `</table>`
+
+    showContent.innerHTML = html + ammoChart;
+
+}
+
+function getHeadsetinfo() {
+    return `
+    
+        <tr>
+            <td>${info.name}</td>
+            </tr>
+    `;
+}

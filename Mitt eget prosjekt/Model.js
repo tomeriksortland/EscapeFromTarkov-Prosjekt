@@ -1,7 +1,7 @@
 let hideOrShow = "hide";
 let customsMapLink = "./img/Customs.png";
 
-let model = {
+const model = {
 
     
 
@@ -34,6 +34,14 @@ let model = {
     class5and6HeadwearChart: [
         { name: 'Altyn helmet', durability: '45', ricochetChance: 'High', eronomics: '-6', soundReduction: 'High', headset: 'No' },
         { name: 'Vulkan-5 (LShZ-5) heavy', durability: '55', ricochetChance: 'High', eronomics: '-20', soundReduction: 'High', headset: 'No' },
+    ],
+
+    arrayHeadset: [
+        { name: 'Peltor ComTac 2' },
+        { name: 'MSA Sordin Supreme' },
+        { name: 'Peltor Tactical Sport' },
+        { name: 'Ops-Core FAST RAC' },
+        { name: 'GSSh-01 Active' },
     ],
     
     
