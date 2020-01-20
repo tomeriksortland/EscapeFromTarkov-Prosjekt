@@ -67,7 +67,7 @@ th {
     align-content: center;
     font-size: 30px;
     font-family: 'Courier New', Courier, monospace;
-    background-color: rgba(163, 154, 154, 0.2);
+    background-color: rgba(163, 154, 154, 0.3);
     font-weight: bold;
 }
 
@@ -84,25 +84,25 @@ th {
 
 
 .factoryMap {
-    background-image: url("./img/Factory.png")
+    background-image: url("./img/Maps/Factory.png")
 }
 
 .customsMap {
-    background-image: url("./img/Customs.png");
+    background-image: url("./img/Maps/Customs.png");
 }
 
 .interchangeMap {
-    background-image: url('./img/Interchange.jpg')
+    background-image: url('./img/Maps/Interchange.jpg')
 }
 
 .woodsMap {
-    background-image: url('./img/Woods.jpg')
+    background-image: url('./img/Maps/Woods.jpg')
 }
 
 .shorelineMap {
-    background-image: url('./img/Shoreline.jpg');
+    background-image: url('./img/Maps/Shoreline.jpg');
 }
 
 .reserveMap {
-    background-image: url('./img/Reserve.jpg');
+    background-image: url('./img/Maps/Reserve.jpg');
 }

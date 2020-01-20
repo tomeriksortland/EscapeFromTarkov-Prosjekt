@@ -11,6 +11,7 @@ function makeClass4HeadwearChart() {
     ammoChart = `
     <table class="div3">
         <tr>
+            <th>Img</th>
             <th>Name</th>
             <th>Durability</th>
             <th>Ricochet Change</th>
@@ -35,6 +36,7 @@ function getClass4Headwearinfo() {
     return `
     
         <tr>
+            <td><img src="${info.img}"></td>
             <td>${info.name}</td>
             <td>${info.durability}</td>
             <td>${info.ricochetChance}</td>
@@ -56,6 +58,7 @@ function makeClass5and6HeadwearChart() {
     ammoChart = `
     <table class="div3">
         <tr>
+            <th>Img</th>
             <th>Name</th>
             <th>Durability</th>
             <th>Ricochet Change</th>
@@ -80,6 +83,7 @@ function getClass5and6Headwearinfo() {
     return `
     
         <tr>
+            <td><img src="${info.img}"</td>
             <td>${info.name}</td>
             <td>${info.durability}</td>
             <td>${info.ricochetChance}</td>
@@ -101,6 +105,7 @@ function makeHeadsetChart() {
     ammoChart = `
     <table class="div3">
         <tr>
+            <th>Img</th>
             <th>Name</th>
         </tr>`
 
@@ -120,6 +125,7 @@ function getHeadsetinfo() {
     return `
     
         <tr>
+            <td><img src="${info.img}"></td>
             <td>${info.name}</td>
             </tr>
     `;

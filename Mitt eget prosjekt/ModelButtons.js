@@ -37,7 +37,7 @@ const modelMenuButtons = {
         { makeEquipmentFunction: 'updateView', buttonName: 'Back',},
         { makeEquipmentFunction: 'makeHeadwearButtons', buttonName: 'Headwear' },
         { makeEquipmentFunction: 'makeHeadsetChart', buttonName: 'Headsets' },
-        { makeEquipmentFunction: 'makeKevlarButtons', buttonName: 'Armored Vests' },
+        { makeEquipmentFunction: 'makeBodyArmorButtons', buttonName: 'Body Armor' },
         { makeEquipmentFunction: 'makeChestRigButtons', buttonName: 'Chest Rigs' },
         { makeEquipmentFunction: 'makeBackpackButtons', buttonName: 'Backpacks' },
         { makeEquipmentFunction: 'makeSecureContainerChart', buttonName: 'Secure Container' },
@@ -49,22 +49,23 @@ const modelMenuButtons = {
         { makeHeadwearFunction: 'makeClass5and6HeadwearChart', buttonName: 'Class 5 & 6 Headwear' }
     ],
 
-    makeKevlarButtons: [
-        { makeArmoredVestsFunction: 'makeEquipmentButtonList', buttonName: 'Back' },
-        { makeArmoredVestsFunction: 'makeEarlyMidgameArmoredVestsChart', buttonName: 'Class 4 Armored Vests' },
-        { makeArmoredVestsFunction: 'makeEarlyMidgameArmoredVestsChart', buttonName: 'Class 5 & 6 Armored Vests' }
+    makeBodyArmorButtons: [
+        { makeBodyArmorFunction: 'makeEquipmentButtonList', buttonName: 'Back' },
+        { makeBodyArmorFunction: 'makeClass4ArmorChart', buttonName: 'Class 4 Body Armor' },
+        { makeBodyArmorFunction: 'makeClass5ArmorChart', buttonName: 'Class 5 Body Armor' },
+        { makeBodyArmorFunction: 'makeClass6ArmorChart', buttonName: 'Class 6 Body Armor' }
     ],
 
-    makeChestRigButtons: [
+    arrayChestRigType: [
         { makeChestRigFunction: 'makeEquipmentButtonList', buttonName: 'Back' },
-        { makeChestRigFunction: 'makeUnarmoredRigChart', buttonName: 'Unarmored Chest Rigs' },
-        { makeChestRigFunction: 'makeArmoredRigChart', buttonName: 'Armored Chest Rigs' },
+        { makeChestRigFunction: 'makeArmoredRigCharts', buttonName: 'Armored Chest Rigs' },
+        { makeChestRigFunction: 'makeUnarmoredRigCharts', buttonName: 'Unarmored Chest Rigs' },
     ],
 
     makeBackpackButtons: [
         { makeBackpackFunction: 'makeEquipmentButtonList', buttonName: 'Back' },
         { makeBackpackFunction: 'makeMedBackpackChart', buttonName: 'Backpacks' },
-        { makeBackpackFunction: 'makeBigBackpackChart', buttonName: 'XL Backpacks' },
+        { makeBackpackFunction: 'makeXLBackpackChart', buttonName: 'XL Backpacks' },
     ]
 
 }

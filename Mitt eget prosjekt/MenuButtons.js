@@ -90,16 +90,16 @@ showContent.innerHTML = html;
 
 }
 
-function makeKevlarButtons() {
+function makeBodyArmorButtons() {
     html = '';
     html += `<div>
-        <button onclick="dropDown()" class="dropDownMenu div1">Menu</button>
+        <button onclick="makeEquipmentButtonList()" class="dropDownMenu div1">Menu</button>
         </div>
         <div class="div2">
 `
-for (ArmoredVestsButton of modelMenuButtons.makeKevlarButtons) {
+for (ArmoredVestsButton of modelMenuButtons.makeBodyArmorButtons) {
     html += `
-            <button class="${hideOrShow} dropdownMenuContent" onclick="${ArmoredVestsButton.makeArmoredVestsFunction}()">${ArmoredVestsButton.buttonName}</button>
+            <button class="${hideOrShow} dropdownMenuContent" onclick="${ArmoredVestsButton.makeBodyArmorFunction}()">${ArmoredVestsButton.buttonName}</button>
             `
 }
 html += `</div>`
@@ -114,7 +114,7 @@ function makeChestRigButtons() {
         </div>
         <div class="div2">
 `
-for (chestRigButton of modelMenuButtons.makeChestRigButtons) {
+for (chestRigButton of modelMenuButtons.arrayChestRigType) {
     html += `
             <button class="${hideOrShow} dropdownMenuContent" onclick="${chestRigButton.makeChestRigFunction}()">${chestRigButton.buttonName}</button>
             `

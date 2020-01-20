@@ -9,6 +9,7 @@ function make46x30chart() {
     ammoChart = `
     <table class="div3">
         <tr>
+            <th>Img</th>
             <th>Ammo Type</th>
             <th>Damage</th>
             <th>Penetration</th>
@@ -31,6 +32,7 @@ function get46x30info() {
     return `
     
         <tr>
+            <td><img src="${info.img}"</td>
             <td>${info.type}</td>
             <td>${info.damage}</td>
             <td>${info.penetration}</td>
@@ -53,6 +55,7 @@ function make9x39chart() {
     ammoChart = `
             <table class="div3">
                 <tr>
+                    <th>Img</th>
                     <th>Ammo Type</th>
                     <th>Damage</th>
                     <th>Penetration</th>
@@ -74,6 +77,7 @@ function get9x39Info() {
     return `
                
                    <tr>
+                    <td><img src="${info.img}"</td>
                        <td>${info.type}</td>
                        <td>${info.damage}</td>
                        <td>${info.penetration}</td>
@@ -94,6 +98,7 @@ function make545x39chart() {
     ammoChart = `
     <table class="div3">
         <tr>
+            <th>Img</th>
             <th>Ammo Type</th>
             <th>Damage</th>
             <th>Penetration</th>
@@ -116,6 +121,7 @@ function get545x39info() {
     return `
     
         <tr>
+            <td><img src="${info.img}"</td>
             <td>${info.type}</td>
             <td>${info.damage}</td>
             <td>${info.penetration}</td>
@@ -136,6 +142,7 @@ function make556x45chart() {
     ammoChart = `
     <table class="div3">
         <tr>
+            <th>Img</th>
             <th>Ammo Type</th>
             <th>Damage</th>
             <th>Penetration</th>
@@ -158,6 +165,7 @@ function get556x45info() {
     return `
     
         <tr>
+            <td><img src="${info.img}"</td>
             <td>${info.type}</td>
             <td>${info.damage}</td>
             <td>${info.penetration}</td>
@@ -181,6 +189,7 @@ function make762x39chart() {
     ammoChart = `
             <table class="div3">
                 <tr>
+                    <th>Img</th>
                     <th>Ammo Type</th>
                     <th>Damage</th>
                     <th>Penetration</th>
@@ -204,6 +213,7 @@ function get762x39info() {
     return `
             
                 <tr>
+                    <td><img src="${info.img}"</td>
                     <td>${info.type}</td>
                     <td>${info.damage}</td>
                     <td>${info.penetration}</td>
@@ -224,6 +234,7 @@ function make762x51chart() {
     ammoChart = `
             <table class="div3">
                 <tr>
+                    <th>Img</th>
                     <th>Ammo Type</th>
                     <th>Damage</th>
                     <th>Penetration</th>
@@ -247,6 +258,7 @@ function get762x51info() {
     return `
             
                 <tr>
+                    <td><img src="${info.img}"</td>
                     <td>${info.type}</td>
                     <td>${info.damage}</td>
                     <td>${info.penetration}</td>
@@ -268,6 +280,7 @@ function make762x54Rchart() {
     ammoChart = `
             <table class="div3">
                 <tr>
+                    <th>Img</th>
                     <th>Ammo Type</th>
                     <th>Damage</th>
                     <th>Penetration</th>
@@ -291,6 +304,7 @@ function get762x54Rinfo() {
     return `
             
                 <tr>
+                    <td><img src="${info.img}"</td>
                     <td>${info.type}</td>
                     <td>${info.damage}</td>
                     <td>${info.penetration}</td>
