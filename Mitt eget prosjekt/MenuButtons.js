@@ -1,16 +1,22 @@
 
 
 
-function makeWeaponsList() {
-    html = ''
-    html = `
-            <div>
+function makeBuildListButtons() {
+    ammoChart = '';
+    html = '';
+    html += `<div>
             <button onclick="dropDown()" class="dropDownMenu div1">Menu</button>
+            </div>
             <div class="div2">
-            <button onclick="updateView()" class="${hideOrShow} dropdownMenuContent">Back</button>
-    
     `
-    showContent.innerHTML = html;
+    for (BuildButton of modelMenuButtons.makeBuildButtons) {
+        html += `
+                <button class="${hideOrShow} dropdownMenuContent" onclick="${BuildButton.makeAmmoFunction}()">${BuildButton.buttonName}</button>
+                `
+    }
+    html += `</div>`
+    showContent.innerHTML = html + ammoChart;
+
 }
 
 
@@ -56,9 +62,9 @@ function createMapButtons() {
 
 }
 
-    function makeEquipmentButtonList() {
-        html = '';
-        html += `<div>
+function makeEquipmentButtonList() {
+    html = '';
+    html += `<div>
             <button onclick="dropDown()" class="dropDownMenu div1">Menu</button>
             </div>
             <div class="div2">
@@ -80,13 +86,13 @@ function makeHeadwearButtons() {
         </div>
         <div class="div2">
 `
-for (HeadwearButton of modelMenuButtons.makeHeadwearButtons) {
-    html += `
+    for (HeadwearButton of modelMenuButtons.makeHeadwearButtons) {
+        html += `
             <button class="${hideOrShow} dropdownMenuContent" onclick="${HeadwearButton.makeHeadwearFunction}()">${HeadwearButton.buttonName}</button>
             `
-}
-html += `</div>`
-showContent.innerHTML = html;
+    }
+    html += `</div>`
+    showContent.innerHTML = html;
 
 }
 
@@ -97,13 +103,13 @@ function makeBodyArmorButtons() {
         </div>
         <div class="div2">
 `
-for (ArmoredVestsButton of modelMenuButtons.makeBodyArmorButtons) {
-    html += `
+    for (ArmoredVestsButton of modelMenuButtons.makeBodyArmorButtons) {
+        html += `
             <button class="${hideOrShow} dropdownMenuContent" onclick="${ArmoredVestsButton.makeBodyArmorFunction}()">${ArmoredVestsButton.buttonName}</button>
             `
-}
-html += `</div>`
-showContent.innerHTML = html;
+    }
+    html += `</div>`
+    showContent.innerHTML = html;
 
 }
 
@@ -114,13 +120,13 @@ function makeChestRigButtons() {
         </div>
         <div class="div2">
 `
-for (chestRigButton of modelMenuButtons.arrayChestRigType) {
-    html += `
+    for (chestRigButton of modelMenuButtons.arrayChestRigType) {
+        html += `
             <button class="${hideOrShow} dropdownMenuContent" onclick="${chestRigButton.makeChestRigFunction}()">${chestRigButton.buttonName}</button>
             `
-}
-html += `</div>`
-showContent.innerHTML = html;
+    }
+    html += `</div>`
+    showContent.innerHTML = html;
 
 }
 
@@ -131,12 +137,12 @@ function makeBackpackButtons() {
         </div>
         <div class="div2">
 `
-for (BackpackButton of modelMenuButtons.makeBackpackButtons) {
-    html += `
+    for (BackpackButton of modelMenuButtons.makeBackpackButtons) {
+        html += `
             <button class="${hideOrShow} dropdownMenuContent" onclick="${BackpackButton.makeBackpackFunction}()">${BackpackButton.buttonName}</button>
             `
-}
-html += `</div>`
-showContent.innerHTML = html;
+    }
+    html += `</div>`
+    showContent.innerHTML = html;
 
 }

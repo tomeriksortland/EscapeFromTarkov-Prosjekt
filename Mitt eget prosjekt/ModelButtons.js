@@ -4,9 +4,19 @@ const modelMenuButtons = {
 
     
     makeMenuCategories: [
+        { makeCategoryFunction: 'makeBuildListButtons', buttonName: 'Weapon Builds' },
         { makeCategoryFunction: 'createMapButtons', buttonName: 'Maps' },
         { makeCategoryFunction: 'makeAmmoButtonList', buttonName: 'Ammo' },
         { makeCategoryFunction: 'makeEquipmentButtonList', buttonName: 'Equipment' },
+    ],
+
+    makeBuildButtons: [
+        { makeAmmoFunction: 'updateView', buttonName: 'Back' },
+        { makeAmmoFunction: 'makeHK416Build', buttonName: 'HK416 Recoil Build' },
+        { makeAmmoFunction: 'makeM4Build', buttonName: 'M4A1 Recoil Build' },
+        { makeAmmoFunction: 'makeMP7Build', buttonName: 'MP7A2 Recoil Build' },
+        { makeAmmoFunction: 'makeASVALBuild', buttonName: 'ASVAL Recoil Build' },
+        { makeAmmoFunction: 'makeAK74Build', buttonName: 'AK74M Recoil Build' },
     ],
 
 
