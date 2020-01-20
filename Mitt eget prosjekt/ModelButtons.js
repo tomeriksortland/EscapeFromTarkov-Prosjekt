@@ -45,17 +45,14 @@ const modelMenuButtons = {
 
     makeHeadwearButtons: [
         { makeHeadwearFunction: 'makeEquipmentButtonList', buttonName: 'Back' },
-        { makeHeadwearFunction: 'makeClass2HeadwearChart', buttonName: 'Class 2 Headwear' },
-        { makeHeadwearFunction: 'makeClass3HeadwearChart', buttonName: 'Class 3 Headwear' },
         { makeHeadwearFunction: 'makeClass4HeadwearChart', buttonName: 'Class 4 Headwear' },
         { makeHeadwearFunction: 'makeClass5and6HeadwearChart', buttonName: 'Class 5 & 6 Headwear' }
     ],
 
     makeKevlarButtons: [
         { makeArmoredVestsFunction: 'makeEquipmentButtonList', buttonName: 'Back' },
-        { makeArmoredVestsFunction: 'makeEarlyMidgameArmoredVestsChart', buttonName: 'Class 3 & 4 Armored Vests' },
-        { makeArmoredVestsFunction: 'makeEarlyMidgameArmoredVestsChart', buttonName: 'Class 3 & 4 Armored Vests' },
-        { makeArmoredVestsFunction: 'makeEndgameArmoredVestsChart', buttonName: 'Class 5 & 6 Armored Vests' }
+        { makeArmoredVestsFunction: 'makeEarlyMidgameArmoredVestsChart', buttonName: 'Class 4 Armored Vests' },
+        { makeArmoredVestsFunction: 'makeEarlyMidgameArmoredVestsChart', buttonName: 'Class 5 & 6 Armored Vests' }
     ],
 
     makeChestRigButtons: [
