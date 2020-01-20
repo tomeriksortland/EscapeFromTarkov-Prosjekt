@@ -95,7 +95,7 @@ function makeHeadsetChart() {
     html = '';
     html = `
     <div>
-    <button onclick="makeHeadwearButtons()" class="${hideOrShow} dropdownMenuContent">Back</button>
+    <button onclick="makeEquipmentButtonList()" class="${hideOrShow} dropdownMenuContent">Back</button>
     </div>
     `
     ammoChart = `

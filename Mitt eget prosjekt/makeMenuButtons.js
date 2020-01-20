@@ -86,7 +86,6 @@ for (HeadwearButton of modelMenuButtons.makeHeadwearButtons) {
             `
 }
 html += `</div>`
-console.log(html)
 showContent.innerHTML = html;
 
 }
