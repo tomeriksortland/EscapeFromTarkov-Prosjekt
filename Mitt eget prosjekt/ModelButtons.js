@@ -12,11 +12,11 @@ const modelMenuButtons = {
 
     makeBuildButtons: [
         { makeAmmoFunction: 'updateView', buttonName: 'Back' },
-        { makeAmmoFunction: 'makeHK416Build', buttonName: 'HK416 Recoil Build' },
-        { makeAmmoFunction: 'makeM4Build', buttonName: 'M4A1 Recoil Build' },
-        { makeAmmoFunction: 'makeMP7Build', buttonName: 'MP7A2 Recoil Build' },
-        { makeAmmoFunction: 'makeASVALBuild', buttonName: 'ASVAL Recoil Build' },
-        { makeAmmoFunction: 'makeAK74Build', buttonName: 'AK74M Recoil Build' },
+        { makeAmmoFunction: 'makeHK416BuildChart', buttonName: 'HK416 Recoil Build' },
+        { makeAmmoFunction: 'makeM4BuildChart', buttonName: 'M4A1 Recoil Build' },
+        { makeAmmoFunction: 'makeMP7BuildChart', buttonName: 'MP7A2 Recoil Build' },
+        { makeAmmoFunction: 'makeASVALBuildChart', buttonName: 'ASVAL Recoil Build' },
+        { makeAmmoFunction: 'makeAK74BuildChart', buttonName: 'AK74M Recoil Build' },
     ],
 
 

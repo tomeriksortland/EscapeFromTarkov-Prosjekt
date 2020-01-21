@@ -1,0 +1,16 @@
+arrayHK416Build: [
+    { img: './img/HK416Build/BufferTube.png', name: 'HK "Enhanced Tube" buffer tube', price: 'xxx' },
+    { img: './img/HK416Build/Stock.png', name: 'HK E1 Stock', price: 'xxx' },
+    { img: './img/HK416Build/PistolGrip.png', name: 'HK Ergo PSG-1', price: 'xxx' },
+    { img: './img/HK416Build/Barrel.png', name: '20" Barrel for 416A5', price: 'xxx' },
+    { img: './img/HK416Build/Handguard.png', name: 'HK MRS 14" Keymod', price: 'xxx' },
+    { img: './img/HK416Build/6inchGuide.png', name: 'Strike Industries Keymod 6 Inch Guide', price: 'xxx' },
+    { img: './img/HK416Build/Foregrip.png', name: 'Zenit RK-2', price: 'xxx' },
+    { img: './img/HK416Build/ChargeHandle.png', name: 'Raptor Charging Handle', price: 'xxx' },
+    { img: './img/HK416Build/Muzzle.png', name: 'Daniel Defence Wave Muzzle', price: 'xxx' },
+    { img: './img/HK416Build/Suppressor.png', name: 'Daniel Defence Wave QD', price: 'xxx' },
+    { img: './img/HK416Build/GasBlock.png', name: 'HK 416A5 Regular Low Profile Gas Block', price: 'xxx' },
+    { img: './img/HK416Build/RearSight.png', name: 'MBUS Rear Sight', price: 'xxx' },
+    { img: './img/HK416Build/FrontSight.png', name: 'MBUS Front Sight', price: 'xxx' },
+    { img: './img/HK416Build/Sight.png', name: 'Whatever you prefeer', price: 'xxx' },
+]

@@ -1,5 +1,4 @@
 let hideOrShow = "hide";
-let customsMapLink = "./img/Customs.png";
 
 const model = {
 
