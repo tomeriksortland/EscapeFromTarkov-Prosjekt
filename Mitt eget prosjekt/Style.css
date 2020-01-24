@@ -1,5 +1,3 @@
-
-
 body {
     background-image: url("./img/eft.jpg");
     background-repeat: no-repeat;
@@ -9,23 +7,35 @@ body {
 
 .parent {
     display: grid;
-    grid-template-columns: 250px repeat(6, 1fr) 250px;
-    grid-template-rows: 100px repeat(8, 1fr);
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 1fr);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
 }
-
 
 .div1 {
     grid-area: 1 / 1 / 2 / 2;
 }
 
 .div2 {
-    grid-area: 2 / 1 / 10 / 2;
+    grid-area: 2 / 1 / 11 / 2;
 }
 
 .div3 {
-    grid-area: 3 / 3 / 8 / 7;
+    grid-area: 2 / 3 / 9 / 9;
+}
+
+.div4 {
+    grid-area: 1 / 5 / 2 / 6;
+}
+
+.div5 {
+    grid-area: 1 / 3 / 2 / 9;
+    text-align: center;
+}
+
+.div6 {
+    grid-area: 1 / 2 / 3 / 3;
 }
 
 .dropDownMenu {
@@ -33,15 +43,22 @@ body {
     color: white;
     height: 100px;
     width: 200px;
-    font-size: 16px;
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
     border: 2px solid grey;
     cursor: pointer;
+    text-shadow: 
+     3px 3px 0 #000,
+    -1px -1px 0 #000,
+     1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
 }
 
 .dropdownMenuContent:hover {
     background-color: #ddd
 }
-
 
 .hide {
     display: none;
@@ -53,15 +70,19 @@ body {
     background-color: #2980B9;
     color: white;
     text-align: center;
-    font-size: 17px;
+    font-size: 25px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
     padding: 15px;
+    text-shadow: 
+     3px 3px 0 #000, 
+    -1px -1px 0 #000, 
+     1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
 }
 
-
-table,
-tr,
-td,
-th {
+table, tr, td, th {
     border: 3px solid black;
     color: rgb(255, 255, 255);
     border-collapse: collapse;
@@ -71,19 +92,22 @@ th {
     font-family: 'Courier New', Courier, monospace;
     background-color: rgba(163, 154, 154, 0.3);
     font-weight: bold;
+    text-shadow:
+     3px 3px 0 #000, 
+    -1px -1px 0 #000,
+     1px -1px 0 #000, 
+    -1px 1px 0 #000, 
+     1px 1px 0 #000;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
 }
 
-
-td,
-th {
+td, th {
     padding: 10px;
 }
 
 th {
     background-color: #2980B9;
 }
-
-
 
 .factoryMap {
     background-image: url("./img/Maps/Factory.png")
@@ -107,4 +131,10 @@ th {
 
 .reserveMap {
     background-image: url('./img/Maps/Reserve.jpg');
+}
+
+.HK416background {
+    background-image: url('./img/HK416Build/HK416.png');
+    height: 250px;
+    width: 650px;
 }

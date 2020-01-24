@@ -146,3 +146,38 @@ function makeBackpackButtons() {
     showContent.innerHTML = html;
 
 }
+
+function makeMissionButtonList() {
+    html = '';
+    html += `<div>
+        <button onclick="dropDown()" class="dropDownMenu div1">Menu</button>
+        </div>
+        <div class="div2">
+`
+    for (MissionButton of modelMenuButtons.makeMissionButtons) {
+        html += `
+            <button class="${hideOrShow} dropdownMenuContent" onclick="${MissionButton.makeMissionButtonFunction}()">${MissionButton.buttonName}</button>
+            `
+    }
+    html += `</div>`
+    showContent.innerHTML = html;
+
+}
+
+function makeWeaponsmithButtons() {
+    html = '';
+    html += `<div>
+        <button onclick="dropDown()" class="dropDownMenu div1">Menu</button>
+        </div>
+        <div class="div2">
+`
+    for (WeaponSmithButton of modelMenuButtons.makeWeaponsmithMissionButtons) {
+        html += `
+            <button class="${hideOrShow} dropdownMenuContent" onclick="${WeaponSmithButton.makeWeaponSmithFunction}()">${WeaponSmithButton.buttonName}</button>
+            `
+    }
+    html += `</div>`
+    showContent.innerHTML = html;
+
+}
+

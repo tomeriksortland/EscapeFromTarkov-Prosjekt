@@ -7,14 +7,14 @@ function make46x30chart() {
     </div>
     `
     ammoChart = `
-    <table class="div3">
-        <tr>
-            <th>Img</th>
-            <th>Ammo Type</th>
-            <th>Damage</th>
-            <th>Penetration</th>
-            <th>Price</th>
-        </tr>
+        <table class="div3">
+            <tr>
+                <th>Img</th>
+                <th>Ammo Type</th>
+                <th>Damage</th>
+                <th>Penetration</th>
+                <th>Useable By</th>
+            </tr>
     `
 
     for (info of model.array46x30) {
@@ -36,7 +36,7 @@ function get46x30info() {
             <td>${info.type}</td>
             <td>${info.damage}</td>
             <td>${info.penetration}</td>
-            <td>${info.price}</td>
+            <td>${info.weapon}</td>
         </tr>
     `;
 }
@@ -48,9 +48,9 @@ function make9x39chart() {
     ammoChart = '';
     html = '';
     html = `
-            <div>
-            <button onclick="makeAmmoButtonList()" class="${hideOrShow} dropdownMenuContent">Back</button>
-            </div>
+                <div>
+                <button onclick="makeAmmoButtonList()" class="${hideOrShow} dropdownMenuContent">Back</button>
+                </div>
             `
     ammoChart = `
             <table class="div3">
@@ -59,7 +59,7 @@ function make9x39chart() {
                     <th>Ammo Type</th>
                     <th>Damage</th>
                     <th>Penetration</th>
-                    <th>Price</th>
+                    <th>Useable By</th>
                 </tr>
             `
     for (info of model.array9x39) {
@@ -81,7 +81,7 @@ function get9x39Info() {
                        <td>${info.type}</td>
                        <td>${info.damage}</td>
                        <td>${info.penetration}</td>
-                       <td>${info.price}</td>
+                       <td>${info.weapon}</td>
                    </tr>
                `
 };
@@ -91,9 +91,9 @@ function make545x39chart() {
     ammoChart = '';
     html = '';
     html = `
-    <div>
-    <button onclick="makeAmmoButtonList()" class="${hideOrShow} dropdownMenuContent">Back</button>
-    </div>
+        <div>
+        <button onclick="makeAmmoButtonList()" class="${hideOrShow} dropdownMenuContent">Back</button>
+        </div>
     `
     ammoChart = `
     <table class="div3">
@@ -102,7 +102,7 @@ function make545x39chart() {
             <th>Ammo Type</th>
             <th>Damage</th>
             <th>Penetration</th>
-            <th>Price</th>
+            <th>Useable By</th>
         </tr>`
 
 
@@ -125,7 +125,7 @@ function get545x39info() {
             <td>${info.type}</td>
             <td>${info.damage}</td>
             <td>${info.penetration}</td>
-            <td>${info.price}</td>
+            <td>${info.weapon}</td>
         </tr>
     `;
 }
@@ -135,7 +135,7 @@ function make556x45chart() {
     ammoChart = '';
     html = '';
     html = `
-    <div>
+        <div>
     <button onclick="makeAmmoButtonList()" class="${hideOrShow} dropdownMenuContent">Back</button>
     </div>
     `
@@ -146,7 +146,7 @@ function make556x45chart() {
             <th>Ammo Type</th>
             <th>Damage</th>
             <th>Penetration</th>
-            <th>Price</th>
+            <th>Useable By</th>
         </tr>`
 
 
@@ -169,7 +169,7 @@ function get556x45info() {
             <td>${info.type}</td>
             <td>${info.damage}</td>
             <td>${info.penetration}</td>
-            <td>${info.price}</td>
+            <td>${info.weapon}</td>
         </tr>
     `;
 }
@@ -193,7 +193,7 @@ function make762x39chart() {
                     <th>Ammo Type</th>
                     <th>Damage</th>
                     <th>Penetration</th>
-                    <th>Price</th>
+                    <th>Useable By</th>
                 </tr>
             `
 
@@ -217,7 +217,7 @@ function get762x39info() {
                     <td>${info.type}</td>
                     <td>${info.damage}</td>
                     <td>${info.penetration}</td>
-                    <td>${info.price}</td>
+                    <td>${info.weapon}</td>
                 </tr>
             
             `;
@@ -238,7 +238,7 @@ function make762x51chart() {
                     <th>Ammo Type</th>
                     <th>Damage</th>
                     <th>Penetration</th>
-                    <th>Price</th>
+                    <th>Useable By</th>
                 </tr>
             `
 
@@ -262,7 +262,7 @@ function get762x51info() {
                     <td>${info.type}</td>
                     <td>${info.damage}</td>
                     <td>${info.penetration}</td>
-                    <td>${info.price}</td>
+                    <td>${info.weapon}</td>
                 </tr>
             
             `;
@@ -284,7 +284,7 @@ function make762x54Rchart() {
                     <th>Ammo Type</th>
                     <th>Damage</th>
                     <th>Penetration</th>
-                    <th>Price</th>
+                    <th>Useable By</th>
                 </tr>
             `
 
@@ -308,7 +308,7 @@ function get762x54Rinfo() {
                     <td>${info.type}</td>
                     <td>${info.damage}</td>
                     <td>${info.penetration}</td>
-                    <td>${info.price}</td>
+                    <td>${info.weapon}</td>
                 </tr>
             
             `;

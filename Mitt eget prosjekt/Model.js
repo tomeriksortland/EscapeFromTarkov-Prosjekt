@@ -76,6 +76,63 @@ const model = {
         { img: './img/Backpacks/Paratus.png', name: '3V G Paratus', size: '35', mobility: '-5%' },
     ],
 
+    arrayHK416Build: [
+        { img: './img/M4A1Build/Mag.png', name: 'Magpul PMAG D-60' },
+        { img: './img/HK416Build/Sight.png', name: 'Whatever you prefeer' },
+        { img: './img/HK416Build/BufferTube.png', name: 'HK "Enhanced Tube" buffer tube' },
+        { img: './img/HK416Build/Stock.png', name: 'HK E1 Stock' },
+        { img: './img/HK416Build/PistolGrip.png', name: 'HK Ergo PSG-1' },
+        { img: './img/HK416Build/Barrel.png', name: '20" Barrel for 416A5' },
+        { img: './img/HK416Build/Handguard.png', name: 'HK MRS 14" Keymod' },
+        { img: './img/HK416Build/6inchGuide.png', name: 'Strike Industries Keymod 6 Inch Guide' },
+        { img: './img/HK416Build/Foregrip.png', name: 'Zenit RK-2' },
+        { img: './img/HK416Build/ChargeHandle.png', name: 'Raptor Charging Handle' },
+        { img: './img/HK416Build/Muzzle.png', name: 'Daniel Defence Wave Muzzle' },
+        { img: './img/HK416Build/Suppressor.png', name: 'Daniel Defence Wave QD' },
+        { img: './img/HK416Build/GasBlock.png', name: 'HK 416A5 Regular Low Profile Gas Block' },
+        { img: './img/HK416Build/RearSight.gif', name: 'MBUS Rear Sight' },
+        { img: './img/HK416Build/FrontSight.gif', name: 'MBUS Front Sight' },
+    ],
+
+    arrayM4A1Build: [
+        { img: './img/M4A1Build/Mag.png', name: 'Magpul PMAG D-60' },
+        { img: './img/M4A1Build/Sight.png', name: 'Whatever you prefeer' },
+        { img: './img/M4A1Build/Reciver.png', name: 'Vltor MUR-1S' },
+        { img: './img/M4A1Build/BufferTube.gif', name: 'SI Advanced Receiver' },
+        { img: './img/M4A1Build/Stock.png', name: 'HK E1 Stock' },
+        { img: './img/M4A1Build/PistolGrip.png', name: 'HK Ergo PSG-1' },
+        { img: './img/M4A1Build/Barrel.png', name: '370mm Barrel for AR-15' },
+        { img: './img/M4A1Build/Handguard.png', name: 'SAI 10" Rail foregrip' },
+        { img: './img/M4A1Build/4.1inchGuide.png', name: 'Magpul M-LOK 4.1 Inch Guide' },
+        { img: './img/M4A1Build/Foregrip.png', name: 'Zenit RK-2' },
+        { img: './img/M4A1Build/ChargeHandle.png', name: 'Raptor Charging Handle' },
+        { img: './img/M4A1Build/Jailbreak.png', name: 'SAI Jail Break' },
+        { img: './img/M4A1Build/Muzzle.png', name: 'Bulletec ST-6012' },
+        { img: './img/M4A1Build/GasBlock.png', name: 'JP Enterprises Gas System-5b' },
+        { img: './img/M4A1Build/RearSight.gif', name: 'MBUS Rear Sight' },
+        { img: './img/M4A1Build/FrontSight.gif', name: 'MBUS Front Sight' },
+    ],
+
+    arrayMP7Build: [
+        { img: './img/MP7Build/Mag.png', name: 'Standard MP7 40-Round Mag' },
+        { img: './img/MP7Build/Sight.png', name: 'Whatever you prefeer' },
+        { img: './img/MP7Build/Foregrip.png', name: 'Zenit RK-2' },
+        { img: './img/MP7Build/Muzzle.png', name: 'HK A1 4.6x30 Flashhider' },
+        { img: './img/MP7Build/Suppressor.png', name: 'B&T Rotex 2' },
+        { img: './img/MP7Build/RearSight.gif', name: 'MBUS Rear Sight' },
+        { img: './img/MP7Build/FrontSight.gif', name: 'MBUS Front Sight' },
+    ],
+
+    arrayASVALBuild: [
+        { img: './img/ASVALBuild/Mag.png', name: '30-round SR3M.130' },
+        { img: './img/ASVALBuild/Sight.png', name: 'Whatever you prefeer' },
+        { img: './img/ASVALBuild/Cover.png', name: 'AS VAL Dust Cover' },
+        { img: './img/ASVALBuild/Stock.png', name: 'TSNIITochMash AS VAL Stock' },
+        { img: './img/ASVALBuild/PistolGrip.png', name: 'AS VAL Pistol Grip' },
+        { img: './img/ASVALBuild/Mount.png', name: 'TOZ 6P29M Mount' },
+        { img: './img/ASVALBuild/Foregrip.png', name: 'Zenit RK-2' },
+    ],
+
     arraySecureContainer: [
         { img: './img/SecureContainer/Kappa.png', name: 'KAPPA Container', size: '12' },
         { img: './img/SecureContainer/Gamma.png', name: 'Gamma Container', size: '9' },
@@ -86,51 +143,51 @@ const model = {
 
     
     array46x30: [
-        { img: './img/Ammo/46x30/APSX.png', type: 'AP SX', damage: '35', penetration: '47', price: 'xxx' },
-        { img: './img/Ammo/46x30/SubsonicSX.png', type: 'Subsonic SX', damage: '41', penetration: '34', price: 'xxx' },
-        { img: './img/Ammo/46x30/FMJSX.png', type: 'FMJ SX', damage: '43', penetration: '30', price: 'xxx' },
-        { img: './img/Ammo/46x30/ActionSX.png', type: 'Action SX', damage: '65', penetration: '13', price: 'xxx' },
+        { img: './img/Ammo/46x30/APSX.png', type: 'AP SX', damage: '35', penetration: '47', weapon: 'MP7A1, MP7A2' },
+        { img: './img/Ammo/46x30/SubsonicSX.png', type: 'Subsonic SX', damage: '41', penetration: '34', weapon: 'MP7A1, MP7A2' },
+        { img: './img/Ammo/46x30/FMJSX.png', type: 'FMJ SX', damage: '43', penetration: '30', weapon: 'MP7A1, MP7A2' },
+        { img: './img/Ammo/46x30/ActionSX.png', type: 'Action SX', damage: '65', penetration: '13', weapon: 'MP7A1, MP7A2' },
     ],
 
     array9x39: [
-        { img: './img/Ammo/9x39/7N12BP.png', type: '7N12 BP', damage: '60', penetration: '44', price: 'xxx' },
-        { img: './img/Ammo/9x39/7N9SPP.png', type: '7N9 SPP', damage: '67', penetration: '38', price: 'xxx' },
-        { img: './img/Ammo/9x39/SP6.png', type: 'SP-6', damage: '58', penetration: '38', price: 'xxx' },
-        { img: './img/Ammo/9x39/SP5.png', type: 'SP-5', damage: '68', penetration: '30', price: 'xxx' },
+        { img: './img/Ammo/9x39/7N12BP.png', type: '7N12 BP', damage: '60', penetration: '44', weapon: 'AS VAL, VSS' },
+        { img: './img/Ammo/9x39/7N9SPP.png', type: '7N9 SPP', damage: '67', penetration: '38', weapon: 'AS VAL, VSS' },
+        { img: './img/Ammo/9x39/SP6.png', type: 'SP-6', damage: '58', penetration: '38', weapon: 'AS VAL, VSS' },
+        { img: './img/Ammo/9x39/SP5.png', type: 'SP-5', damage: '68', penetration: '30', weapon: 'AS VAL, VSS' },
     ],
 
     array545x39: [
-        { img: './img/Ammo/545x39/Igolnik.png', type: '7N39 Igolnik', damage: '37', penetration: '62', price: 'xxx' },
-        { img: './img/Ammo/545x39/BS.png', type: 'BS Rounds', damage: '40', penetration: '50', price: 'xxx' },
-        { img: './img/Ammo/545x39/BP.png', type: 'BP Rounds', damage: '42', penetration: '32', price: 'xxx' },
-        { img: './img/Ammo/545x39/BT.png', type: 'BT Rounds', damage: '44', penetration: '33', price: 'xxx' },
+        { img: './img/Ammo/545x39/Igolnik.png', type: '7N39 Igolnik', damage: '37', penetration: '62', weapon: 'RPK-16, AK-105, AK-74 Variants' },
+        { img: './img/Ammo/545x39/BS.png', type: 'BS Rounds', damage: '40', penetration: '50', weapon: 'RPK-16, AK-105, AK-74 Variants' },
+        { img: './img/Ammo/545x39/BP.png', type: 'BP Rounds', damage: '42', penetration: '32', weapon: 'RPK-16, AK-105, AK-74 Variants' },
+        { img: './img/Ammo/545x39/BT.png', type: 'BT Rounds', damage: '44', penetration: '33', weapon: 'RPK-16, AK-105, AK-74 Variants' },
     ],
 
     array556x45: [
-        { img: './img/Ammo/556x45/M995.png', type: 'M995', damage: '42', penetration: '53', price: 'xxx' },
-        { img: './img/Ammo/556x45/M856A1.png', type: 'M856A1', damage: '56', penetration: '34', price: 'xxx' },
-        { img: './img/Ammo/556x45/M855A1.png', type: 'M855A1', damage: '57', penetration: '31', price: 'xxx' },
+        { img: './img/Ammo/556x45/M995.png', type: 'M995', damage: '42', penetration: '53', weapon: 'M4A1, HK416, TX-15, DT MDR, ADAR, AK-101/102' },
+        { img: './img/Ammo/556x45/M856A1.png', type: 'M856A1', damage: '56', penetration: '34', weapon: 'M4A1, HK416, TX-15, DT MDR, ADAR, AK-101/102' },
+        { img: './img/Ammo/556x45/M855A1.png', type: 'M855A1', damage: '57', penetration: '31', weapon: 'M4A1, HK416, TX-15, DT MDR, ADAR, AK-101/102' },
     ],
 
     array762x39: [
-        { img: './img/Ammo/762x39/BP.png', type: 'BP', damage: '50', penetration: '45', price: 'xxx' },
-        { img: './img/Ammo/762x39/PS.png', type: 'PS', damage: '57', penetration: '33', price: 'xxx' },
-        { img: './img/Ammo/762x39/T45M.png', type: 'T45M', damage: '62', penetration: '31', price: 'xxx' },
-        { img: './img/Ammo/762x39/US.png', type: 'US', damage: '56', penetration: '29', price: 'xxx' },
+        { img: './img/Ammo/762x39/BP.png', type: 'BP', damage: '50', penetration: '45', weapon: 'AK-103/104, All AKMs, SKS' },
+        { img: './img/Ammo/762x39/PS.png', type: 'PS', damage: '57', penetration: '33', weapon: 'AK-103/104, All AKMs, SKS' },
+        { img: './img/Ammo/762x39/T45M.png', type: 'T45M', damage: '62', penetration: '31', weapon: 'AK-103/104, All AKMs, SKS' },
+        { img: './img/Ammo/762x39/US.png', type: 'US', damage: '56', penetration: '29', weapon: 'AK-103/104, All AKMs, SKS' },
     ],
 
     array762x51: [
-        { img: './img/Ammo/762x51/M61.png', type: 'M61', damage: '70', penetration: '68', price: 'xxx' },
-        { img: './img/Ammo/762x51/M62.png', type: 'M62', damage: '79', penetration: '54', price: 'xxx' },
-        { img: './img/Ammo/762x51/M80.png', type: 'M80', damage: '80', penetration: '45', price: 'xxx' },
-        { img: './img/Ammo/762x51/TPZSP.png', type: 'TPZ SP', damage: '60', penetration: '36', price: 'xxx' },
+        { img: './img/Ammo/762x51/M61.png', type: 'M61', damage: '70', penetration: '68', weapon: 'SA-58, DT MDR.308, M1A, RSASS, SR-25, DVL-10, M700, Orsis-5000' },
+        { img: './img/Ammo/762x51/M62.png', type: 'M62', damage: '79', penetration: '54', weapon: 'SA-58, DT MDR.308, M1A, RSASS, SR-25, DVL-10, M700, Orsis-5000' },
+        { img: './img/Ammo/762x51/M80.png', type: 'M80', damage: '80', penetration: '45', weapon: 'SA-58, DT MDR.308, M1A, RSASS, SR-25, DVL-10, M700, Orsis-5000' },
+        { img: './img/Ammo/762x51/TPZSP.png', type: 'TPZ SP', damage: '60', penetration: '36', weapon: 'SA-58, DT MDR.308, M1A, RSASS, SR-25, DVL-10, M700, Orsis-5000' },
     ],
 
     array762x54R: [
-        { img: './img/Ammo/762x54R/7N37.png', type: '7N37', damage: '72', penetration: '70', price: 'xxx' },
-        { img: './img/Ammo/762x54R/SNB.png', type: 'SNB', damage: '75', penetration: '62', price: 'xxx' },
-        { img: './img/Ammo/762x54R/7BT1.png', type: '7BT1', damage: '78', penetration: '59', price: 'xxx' },
-        { img: './img/Ammo/762x54R/7N1.png', type: '7N1 Sniper Cartridge', damage: '86', penetration: '45', price: 'xxx' },
-        { img: './img/Ammo/762x54R/LPSGzh.png', type: 'LPS Gzh', damage: '81', penetration: '42', price: 'xxx' },
+        { img: './img/Ammo/762x54R/7N37.png', type: '7N37', damage: '72', penetration: '70', weapon: 'SVDS, SV-98, Mosin' },
+        { img: './img/Ammo/762x54R/SNB.png', type: 'SNB', damage: '75', penetration: '62', weapon: 'SVDS, SV-98, Mosin' },
+        { img: './img/Ammo/762x54R/7BT1.png', type: '7BT1', damage: '78', penetration: '59', weapon: 'SVDS, SV-98, Mosin' },
+        { img: './img/Ammo/762x54R/7N1.png', type: '7N1 Sniper Cartridge', damage: '86', penetration: '45', weapon: 'SVDS, SV-98, Mosin' },
+        { img: './img/Ammo/762x54R/LPSGzh.png', type: 'LPS Gzh', damage: '81', penetration: '42', weapon: 'SVDS, SV-98, Mosin' },
     ],
 }

@@ -1,16 +1,160 @@
-arrayHK416Build: [
-    { img: './img/HK416Build/BufferTube.png', name: 'HK "Enhanced Tube" buffer tube', price: 'xxx' },
-    { img: './img/HK416Build/Stock.png', name: 'HK E1 Stock', price: 'xxx' },
-    { img: './img/HK416Build/PistolGrip.png', name: 'HK Ergo PSG-1', price: 'xxx' },
-    { img: './img/HK416Build/Barrel.png', name: '20" Barrel for 416A5', price: 'xxx' },
-    { img: './img/HK416Build/Handguard.png', name: 'HK MRS 14" Keymod', price: 'xxx' },
-    { img: './img/HK416Build/6inchGuide.png', name: 'Strike Industries Keymod 6 Inch Guide', price: 'xxx' },
-    { img: './img/HK416Build/Foregrip.png', name: 'Zenit RK-2', price: 'xxx' },
-    { img: './img/HK416Build/ChargeHandle.png', name: 'Raptor Charging Handle', price: 'xxx' },
-    { img: './img/HK416Build/Muzzle.png', name: 'Daniel Defence Wave Muzzle', price: 'xxx' },
-    { img: './img/HK416Build/Suppressor.png', name: 'Daniel Defence Wave QD', price: 'xxx' },
-    { img: './img/HK416Build/GasBlock.png', name: 'HK 416A5 Regular Low Profile Gas Block', price: 'xxx' },
-    { img: './img/HK416Build/RearSight.png', name: 'MBUS Rear Sight', price: 'xxx' },
-    { img: './img/HK416Build/FrontSight.png', name: 'MBUS Front Sight', price: 'xxx' },
-    { img: './img/HK416Build/Sight.png', name: 'Whatever you prefeer', price: 'xxx' },
-]
+function makeHK416BuildChart() {
+    ammoChart = '';
+    html = '';
+    
+    html = `
+            <div>
+            <button onclick="makeBuildListButtons()" class="${hideOrShow} dropdownMenuContent">Back</button>
+            </div>
+            `
+    ammoChart = `
+    <div class="HK416background div4"></div>
+            <table class="div3">
+                <tr>
+                    <th>Img</th>
+                    <th>Weapon Part</th>
+                </tr>
+            `
+
+
+
+    for (info of model.arrayHK416Build) {
+        ammoChart += getHK416info();
+
+    }
+    ammoChart += `</table>`
+
+    showContent.innerHTML = html + ammoChart;
+
+}
+
+function getHK416info() {
+    return `
+            
+                <tr>
+                    <td><img src="${info.img}"</td>
+                    <td>${info.name}</td>
+                </tr>
+            
+            `;
+}
+
+function makeM4BuildChart() {
+    ammoChart = '';
+    html = '';
+    
+    html = `
+            <div>
+            <button onclick="makeBuildListButtons()" class="${hideOrShow} dropdownMenuContent">Back</button>
+            </div>
+            `
+    ammoChart = `
+            <table class="div3">
+                <tr>
+                    <th>Img</th>
+                    <th>Weapon Part</th>
+                </tr>
+            `
+
+
+
+    for (info of model.arrayM4A1Build) {
+        ammoChart += getM4A1info();
+
+    }
+    ammoChart += `</table>`
+
+    showContent.innerHTML = html + ammoChart;
+
+}
+
+function getM4A1info() {
+    return `
+            
+                <tr>
+                    <td><img src="${info.img}"</td>
+                    <td>${info.name}</td>
+                </tr>
+            
+            `;
+}
+
+function makeMP7BuildChart() {
+    ammoChart = '';
+    html = '';
+    
+    html = `
+            <div>
+            <button onclick="makeBuildListButtons()" class="${hideOrShow} dropdownMenuContent">Back</button>
+            </div>
+            `
+    ammoChart = `
+            <table class="div3">
+                <tr>
+                    <th>Img</th>
+                    <th>Weapon Part</th>
+                </tr>
+            `
+
+
+
+    for (info of model.arrayMP7Build) {
+        ammoChart += getMP7info();
+
+    }
+    ammoChart += `</table>`
+
+    showContent.innerHTML = html + ammoChart;
+
+}
+
+function getMP7info() {
+    return `
+            
+                <tr>
+                    <td><img src="${info.img}"</td>
+                    <td>${info.name}</td>
+                </tr>
+            
+            `;
+}
+
+function makeASVALBuildChart() {
+    ammoChart = '';
+    html = '';
+    
+    html = `
+            <div>
+            <button onclick="makeBuildListButtons()" class="${hideOrShow} dropdownMenuContent">Back</button>
+            </div>
+            `
+    ammoChart = `
+            <table class="div3">
+                <tr>
+                    <th>Img</th>
+                    <th>Weapon Part</th>
+                </tr>
+            `
+
+
+
+    for (info of model.arrayASVALBuild) {
+        ammoChart += getASVALinfo();
+
+    }
+    ammoChart += `</table>`
+
+    showContent.innerHTML = html + ammoChart;
+
+}
+
+function getASVALinfo() {
+    return `
+            
+                <tr>
+                    <td><img src="${info.img}"</td>
+                    <td>${info.name}</td>
+                </tr>
+            
+            `;
+}

@@ -7,6 +7,7 @@ const modelMenuButtons = {
         { makeCategoryFunction: 'makeBuildListButtons', buttonName: 'Weapon Builds' },
         { makeCategoryFunction: 'createMapButtons', buttonName: 'Maps' },
         { makeCategoryFunction: 'makeAmmoButtonList', buttonName: 'Ammo' },
+        { makeCategoryFunction: 'makeMedicalButtonList', buttonName: 'Medical' },
         { makeCategoryFunction: 'makeEquipmentButtonList', buttonName: 'Equipment' },
     ],
 
@@ -16,7 +17,6 @@ const modelMenuButtons = {
         { makeAmmoFunction: 'makeM4BuildChart', buttonName: 'M4A1 Recoil Build' },
         { makeAmmoFunction: 'makeMP7BuildChart', buttonName: 'MP7A2 Recoil Build' },
         { makeAmmoFunction: 'makeASVALBuildChart', buttonName: 'ASVAL Recoil Build' },
-        { makeAmmoFunction: 'makeAK74BuildChart', buttonName: 'AK74M Recoil Build' },
     ],
 
 
@@ -76,6 +76,7 @@ const modelMenuButtons = {
         { makeBackpackFunction: 'makeEquipmentButtonList', buttonName: 'Back' },
         { makeBackpackFunction: 'makeMedBackpackChart', buttonName: 'Backpacks' },
         { makeBackpackFunction: 'makeXLBackpackChart', buttonName: 'XL Backpacks' },
-    ]
+    ],
 
 }
+
