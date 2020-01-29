@@ -7,7 +7,6 @@ const modelMenuButtons = {
         { makeCategoryFunction: 'makeBuildListButtons', buttonName: 'Weapon Builds' },
         { makeCategoryFunction: 'createMapButtons', buttonName: 'Maps' },
         { makeCategoryFunction: 'makeAmmoButtonList', buttonName: 'Ammo' },
-        { makeCategoryFunction: 'makeMedicalButtonList', buttonName: 'Medical' },
         { makeCategoryFunction: 'makeEquipmentButtonList', buttonName: 'Equipment' },
     ],
 
